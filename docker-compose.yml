@@ -1,13 +1,13 @@
 version: '2'
 services:
-  # postgres-service:
-  #   image: postgres:alpine
-  #   ports:
-  #     - "5432:5432"
-  #   environment:
-  #     - POSTGRES_PASSWORD=123
-  #     - POSTGRES_USER=postgres
-  #     - POSTGRES_DB=crud
+  postgres-service:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=crud
   redis-service:
     image: "redis:alpine"
     ports:
